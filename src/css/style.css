@@ -1,0 +1,21 @@
+/*custom font - Lato*/
+@import url("http://fonts.googleapis.com/css?family=Lato:100");
+/*basic reset*/
+* {margin: 0; padding: 0;}
+/*make the body occupy full height*/
+html, body {height: 100%;}
+
+.hex {
+  margin: 60px auto 0;
+  width: 300px;
+  color: white;
+  text-align: center;
+  font-family: Lato;
+  font-size: 18px;
+}
+
+.time {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 64px;
+}
