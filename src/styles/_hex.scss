@@ -1,0 +1,23 @@
+.hexColour {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    .hex {
+        margin: calc(50vh - 40px) auto 0;
+        width: 300px;
+        color: white;
+        text-align: center;
+        font-family: Lato;
+        font-size: 18px;
+
+  }
+
+  .time {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 64px;
+  }
+}

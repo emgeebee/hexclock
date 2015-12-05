@@ -1,0 +1,17 @@
+.icon-container {
+  width: 300px;
+  margin: 10px auto;
+  text-align: center;
+
+  .fa {
+    position: relative;
+    z-index: 1;
+    color: white;
+    font-size: 30px;
+    margin-left: 45px;
+
+    &:first-of-type {
+      margin-left: 0;
+    }
+  }
+}

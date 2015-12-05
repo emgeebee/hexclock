@@ -17,6 +17,10 @@ class ConfigActions {
     this.dispatch();
   }
 
+  configToggle() {
+    this.dispatch();
+  }
+
 }
 
 export default alt.createActions(ConfigActions);

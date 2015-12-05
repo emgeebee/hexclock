@@ -7,8 +7,10 @@ export class ConfigStore {
 
     this.savedConfig = {};
     this.config = {};
+    this.open = false;
 
     this.bindListeners({
+      handleConfigToggle: configActions.CONFIG_TOGGLE,
       handleConfigLoad: configActions.INIT_CONFIG,
       handleConfigChange: configActions.UPDATE_CONFIG,
       handleConfigSave: configActions.SAVE_CONFIG
@@ -25,6 +27,11 @@ export class ConfigStore {
 
   handleConfigChange(config) {
     this.config = config;
+  }
+
+  handleConfigToggle() {
+    this.open = !this.open;
+console.log(this.open);
   }
 }
 

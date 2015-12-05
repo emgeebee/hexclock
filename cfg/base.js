@@ -27,6 +27,7 @@ module.exports = {
     alias: {
       actions: srcPath + '/actions/',
       components: srcPath + '/components/',
+      fonts: srcPath + '/fonts/',
       sources: srcPath + '/sources/',
       stores: srcPath + '/stores/',
       styles: srcPath + '/styles/',
