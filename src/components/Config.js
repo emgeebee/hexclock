@@ -15,10 +15,8 @@ var AppComponent = React.createClass({
   },
 
   getClasses(isActive) {
-console.log(isActive);
     var classes = 'config';
     classes += isActive.open ? ' active' : '';
-console.log(classes);
     return classes;
   },
 
@@ -29,7 +27,7 @@ console.log(classes);
   render() {
     return (
       <div className={this.state.classes}>
-        Config
+        Config - coming soon.
       </div>
     );
   }

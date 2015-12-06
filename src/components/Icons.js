@@ -3,6 +3,7 @@ require('styles/App.scss');
 
 import React from 'react';
 import configActions from '../actions/hextime/ConfigActions';
+import infoActions from '../actions/hextime/InfoActions';
 
 var AppComponent = React.createClass({
 
@@ -10,12 +11,15 @@ var AppComponent = React.createClass({
     configActions.configToggle();
   },
 
+  toggleInfo() {
+    infoActions.infoToggle();
+  },
+
   render() {
     return (
       <div className="icon-container">
-        <i className="fa fa-info-circle"></i>
+        <i className="fa fa-info-circle" onClick={this.toggleInfo}></i>
         <i className="fa fa-cog" onClick={this.toggleConfig}></i>
-        <i className="fa fa-external-link"></i>
       </div>
     );
   }

@@ -31,7 +31,6 @@ export class ConfigStore {
 
   handleConfigToggle() {
     this.open = !this.open;
-console.log(this.open);
   }
 }
 
