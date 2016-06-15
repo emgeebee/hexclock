@@ -1,0 +1,7 @@
+{
+  "generator-react-webpack": {
+    "appName": "hextime",
+    "style": "scss",
+    "postcss": true
+  }
+}
