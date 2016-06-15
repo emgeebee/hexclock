@@ -21,9 +21,9 @@ var AppComponent = React.createClass({
     },
 
     updateTime(val) {
-        this.updateProp('colour', this.getColour(val.data.mins));
-        this.updateProp('opacity', this.getOpacity(val.data.secs));
-        this.updateProp('time', val);
+        this.setState({'colour': this.getColour(val.data.mins)});
+        this.setState({'opacity': this.getOpacity(val.data.secs)});
+        this.setState({'time': val});
         this.updateFavicon();
     },
 
@@ -42,12 +42,6 @@ var AppComponent = React.createClass({
             links.remove();
         }
         document.getElementsByTagName('head')[0].appendChild(link);
-    },
-
-    updateProp(prop, val) {
-        var obj = this.state;
-        obj[prop] = val;
-        this.setState(obj);
     },
 
     getColour(totmins) {
